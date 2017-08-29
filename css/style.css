@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=League+Script");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#canvas{
+	position: fixed;
+	top:0px;
+	z-index: -99;
+}
+
+/* Flickering */
+@-moz-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+.fade {
+  opacity: 0.8!important;
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 80px #38eeff;
+  -webkit-animation: fade 3s infinite alternate;
+  -moz-animation: fade 3s infinite alternate;
+  -o-animation: fade 3s infinite alternate;
+  animation: fade 3s infinite alternate;
+}
+/* title */
+.neon-blue {
+  margin: 0 auto;
+  text-align: center;
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+}
+#title {
+  font-size: 110px;
+  font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#title h1{
+	text-align: center;
+}
