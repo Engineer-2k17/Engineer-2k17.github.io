@@ -1,0 +1,39 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Saira');
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 120vh;
+  background-image: url('engineer.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.card-panel{
+  font-family: 'Saira';
+  color: grey;
+}
+body{
+  
+  background-color: black;
+}
+
+@media screen and (max-width: 785px){
+  #particles-js{
+    background-size: all;
+    height: 50vh;
+  }
+}
+.logo{
+  height: 40px;
+  width: 40px;
+}
